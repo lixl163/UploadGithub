@@ -56,3 +56,39 @@
 >git push -u origin master   （注：此操作目的是把本地仓库push到github上面，此步骤需要你输入帐号和密码）  
  
 ![avatar](/imgs/10.png)  
+
+ 
+ 
+# ----------------------------我是分割线--------------------------
+
+## 使用git命令新增和修改文件
+
+>1.修改项目之后，查看项目状态，命令：git status。如下图：
+
+![avatar](/imgs/git_status.png)  
+
+从图中的标注可以看出，README.md  和 imgs/demo_print1.png 被修改了
+
+
+>2.将修改的文件 提交到本地暂存区，命令：git add file，file 为修改文件名。如下图所示：
+
+![avatar](/imgs/git_add.png)  
+
+由图中的指令可以看出来，已将README.md添加到本地暂存区了，颜色从红色 变成了 绿色。
+
+
+>3.剩下被修改的文件，也按照原来的方式，分别将文件提交到本地暂存区，命令：git add file，file 为修改文件名；再然后通过命令：git status 查询是否添加到暂存区成功。如下图所示：
+
+![avatar](/imgs/git_add_status.png) 
+
+注意：每次修改后的文件，都必须添加到本地暂存区后，才能更新到项目上
+
+>4.提交当前工作空间的修改内容，命令：git commit -m "修改"，引号里面是提交信息，自己可以填写其他内容。如下图所示：
+
+![avatar](/imgs/git_commit.png) 
+
+>5.将项目更新到github或服务器，命令：git push。如下图：
+
+![avatar](/imgs/git_push.png) 
+
+项目上传成功。
